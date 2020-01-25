@@ -1,0 +1,208 @@
+/* ---------------- TAGS ----------------- */
+html {
+  background-color: #F6F5F3;
+  color: #F6F5F3;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* ---------------- IDs ------------------ */
+#donate-button {
+  font-size: 1.5vw;
+  padding: .3vw .9vw .6vw;
+}
+
+#gmn-logo {
+  padding-left: .75vw;
+  width: 6.75vw;
+  height: auto;
+}
+
+#gmn-title {
+  padding-top: 7.5%;
+  font-size: 11.5vw;
+}
+
+#gmn-slogan {
+  padding-top: 2%;
+  font-size: 1.5vw;
+}
+
+#navbar {
+  background: transparent;
+  padding-top: 1%;
+  margin-bottom: calc(-4vw - 1.5%);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+#navbar-links {
+  font-size: 1.5vw;
+  padding-left: 9%;
+}
+
+/* --------------- CLASSES --------------- */
+/* Colors */
+.bg-goldenrod-yellow {
+  background-color: #FBAF08 !important;
+}
+
+.bg-mtn-shadow-blue {
+  background-color: #101357 !important;
+}
+
+.bg-off-white {
+  background-color: #FCFCFF !important;
+}
+
+.bg-old-makeup-pink {
+  background-color: #FEA49F !important;
+}
+
+.bg-vanilla-grey {
+  background-color: #F6F5F3 !important;
+}
+
+.bg-scuffed-dark-grey {
+  background-color: #3D3D3F !important;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-goldenrod-yellow {
+  color: #FBAF08 !important;
+}
+
+.text-mtn-shadow-blue {
+  color: #101357 !important;
+}
+
+.text-off-white {
+  color: #FCFCFF !important;
+}
+
+.text-old-makeup-pink {
+  color: #FEA49F !important;
+}
+
+.text-scuffed-dark-grey {
+  color: #3D3D3F !important;
+}
+
+.text-vanilla-grey {
+  color: #F6F5F3 !important;
+}
+
+/* Navigation */
+.navbar-link {
+  padding-right: 1vw;
+}
+
+/* Parallax */
+.plax {
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.plax .back {
+  width: 100vw;
+  height: 45vw;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+
+.plax .back::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+}
+
+.plax .base{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+.plax-bg-img-1::before {
+  background-image: url("/images/yoga-background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Shape Dimensions */
+.h-fill {
+  height: 100vh;
+}
+
+.h-half {
+  height: 50vh;
+}
+
+.w-fill {
+  width: 100vw;
+}
+
+.w-half {
+  width: 50vw;
+}
+
+.wh-fill {
+  height: 100vh;
+  width: 100vw;
+}
+
+.wh-half {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ----------------- MEDIA ---------------- */
+/* @media (max-width: 572px) {
+  #gmn-logo {
+    width: 15vw;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EOF */
