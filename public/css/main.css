@@ -1,46 +1,75 @@
 /* ---------------- TAGS ----------------- */
 html {
-  background-color: #F6F5F3;
-  color: #F6F5F3;
-  overflow: hidden;
-  scroll-behavior: smooth;
+  background-color: #f6f5f3;
+  color: #f6f5f3;
+  cursor: default;
+  overflow-x: hidden;
 }
 
 a:hover {
   text-decoration: none;
-  color: white;
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
 }
 
 /* ---------------- IDs ------------------ */
+/* contact */
+#contact-action {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* footer */
+#copyright p{
+  font-size: .75vw;
+}
+
+#footer {
+  height: 10vh+2vw;
+  padding-top: 2.5vh;
+}
+
+#social {
+  font-size: 3vh;
+  margin-right: -2vw;
+  padding-bottom: 1vh;
+}
+
+#social i{
+  letter-spacing: 2vw;
+}
+
+/* navbar */
 #donate-button {
+  border-style: solid;
+  background: #fea49f;
+  color: #f6f5f3;
+  cursor: pointer;
   font-size: 1.5vw;
   padding: .3vw .9vw .6vw;
+  transition: 0.3s;
 }
 
 #gmn-logo {
+  cursor: pointer;
   padding-left: .75vw;
   width: 6.75vw;
   height: auto;
 }
 
-#gmn-title {
-  padding-top: 7.5%;
-  font-size: 11.5vw;
-}
-
-#gmn-slogan {
-  padding-top: 2%;
-  font-size: 1.5vw;
-}
-
 #navbar {
   background: transparent;
   padding-top: 1%;
-  margin-bottom: calc(-4vw - 1.5%);
+  margin-top: calc(-4vw - 1.5%);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -49,13 +78,132 @@ body {
 
 #navbar-links {
   font-size: 1.5vw;
-  padding-left: 9%;
+  padding-left: 9.75%;
+}
+
+/* navsidebar */
+#navsidebar {
+  padding-left: 1vw;
+  position: fixed;
+  top: 0;
+}
+
+#navsidebar-links {
+  padding-top: 1vh;
+  padding-left: 1vw;
+}
+
+#navsidebar-links .nav-item {
+  font-size: 1.25vw;
+}
+
+#navsidebar #searchbar {
+  padding-left: 1.5vw;
+}
+
+/* Newsletter */
+#newsletter {
+  height: auto;
+  position: relative;
+  z-index: 3;
+}
+
+/* #newsletter:before {
+  background-repeat: no-repeat;
+  background-image: url('/images/yoga-background.png');
+  background-size: contain;
+  width: 120vw;
+  height: 120vw;
+  top: 65vh;
+} */
+
+#newsletter-title {
+  font-size: 5vw;
+  font-weight: 800;
+  padding-top: 10vh;
+  padding-left: 7.5%;
+}
+
+/* Upcoming events section */
+#upcoming-events {
+
+}
+#upcoming-events-title {
+  font-size: 2rem;
 }
 
 /* --------------- CLASSES --------------- */
+/* -- About Page -- */
+.text-about-section{
+  font-size: 1.5vw;
+  padding: 2vw 4vw 1vw 5vw;
+}
+
+.text-about-section li {
+  margin-bottom: 2vw;
+  margin-left: 1.75vw;
+}
+
+.text-about-section .note {
+  padding-left: 2.5vw;
+}
+
+.text-about-section .sub-section{
+  padding-top: 1.5vw;
+}
+
+/* Carousel */
+.carousel {
+  height: 100vh;
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  left: 7.5%;
+  bottom: 5vh;
+  z-index: 10;
+}
+
+.carousel-control-next {
+  right: -3.5%;
+}
+
+.carousel-control-prev {
+  left: -3.5%;
+}
+
+.carousel-inner h1 {
+  font-size: 5vw;
+}
+
+.carousel-inner p {
+  font-size: 1.25vw;
+  color: #fcfcff;
+}
+
+.carousel-item {
+  height: 100vh;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+}
+
 /* Colors */
+.bdr-mtn-shadow-blue {
+  background-color: #101357 !important;
+}
+
+.bdr-vanilla-grey {
+  background-color: #f6f5f3 !important;
+}
+
 .bg-goldenrod-yellow {
-  background-color: #FBAF08 !important;
+  background-color: #fbaf08 !important;
 }
 
 .bg-mtn-shadow-blue {
@@ -63,27 +211,71 @@ body {
 }
 
 .bg-off-white {
-  background-color: #FCFCFF !important;
+  background-color: #fcfcff !important;
 }
 
 .bg-old-makeup-pink {
-  background-color: #FEA49F !important;
-}
-
-.bg-vanilla-grey {
-  background-color: #F6F5F3 !important;
+  background-color: #fea49f !important;
 }
 
 .bg-scuffed-dark-grey {
-  background-color: #3D3D3F !important;
+  background-color: #3d3d3f !important;
+}
+
+.bg-vanilla-grey {
+  background-color: #f6f5f3 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.link-black {
+  color: #000;
+}
+
+.link-black:hover {
+  cursor: pointer;
+  color: #3d3d3f;
+}
+
+.link-scuffed-dark-grey {
+  color: #3d3d3f !important
+}
+
+.link-scuffed-dark-grey:hover {
+  cursor: pointer;
+  color: #000 !important
+}
+
+.link-scuffed-light-grey {
+  color: #5d5d5f !important
+}
+
+.link-scuffed-light-grey:hover {
+  cursor: pointer;
+  color: #000 !important
+}
+
+.link-vanilla-grey {
+  color: #f6f5f3 !important
+}
+
+.link-vanilla-grey:hover {
+  cursor: pointer;
+  color: #d6d5d3 !important
 }
 
 .text-bold {
   font-weight: 700;
 }
 
+.text-black {
+  color: black;
+}
+
 .text-goldenrod-yellow {
-  color: #FBAF08 !important;
+  color: #fbaf08 !important;
 }
 
 .text-mtn-shadow-blue {
@@ -91,73 +283,44 @@ body {
 }
 
 .text-off-white {
-  color: #FCFCFF !important;
+  color: #fcfcff !important;
 }
 
 .text-old-makeup-pink {
-  color: #FEA49F !important;
+  color: #fea49f !important;
 }
 
 .text-scuffed-dark-grey {
-  color: #3D3D3F !important;
+  color: #3d3d3f !important;
+}
+
+.text-scuffed-light-grey {
+  color: #5d5d5f !important;
 }
 
 .text-vanilla-grey {
-  color: #F6F5F3 !important;
+  color: #f6f5f3 !important;
 }
 
-/* Navigation */
-.navbar-link {
-  padding-right: 1vw;
-}
-
-/* Parallax */
-.plax {
-  height: 100vh;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.plax .back {
-  width: 100vw;
-  height: 45vw;
-  box-sizing: border-box;
-  transform-style: preserve-3d;
-}
-
-.plax .back::before {
-  content: "";
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
-  transform: translateZ(-1px) scale(2);
-}
-
-.plax .base{
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  z-index: 2;
-}
-
-.plax-bg-img-1::before {
-  background-image: url("/images/yoga-background.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-/* Shape Dimensions */
+/* Dimensions */
 .h-fill {
   height: 100vh;
 }
 
 .h-half {
   height: 50vh;
+}
+
+.h-wrap {
+  height: 100%;
+}
+
+.ml-20{
+  margin-left: 20vw;
+}
+
+.shrink:active {
+  transform: scale(.95);
 }
 
 .w-fill {
@@ -174,16 +337,106 @@ body {
 }
 
 .wh-half {
+  height: 50vh;
+  width: 50vw;
+}
+
+.w-80 {
+  width: 80vw;
+}
+
+.w-20 {
+  width: 20vw;
+}
+
+/* Navigation */
+.navbar-link {
+  padding-right: 1vw;
+}
+
+#navsidebar .sub-section {
+  padding-left: 1vw;
+}
+
+/* Parallax */
+.plax {
   height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.plax .back {
   width: 100vw;
+  height: 57vw;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+
+.plax .back::before {
+  content: "";
+  width: 130vw;
+  height: 130vh;
+  top: 0;
+  left: -5vw;
+  position: absolute;
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+}
+
+.plax .base{
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.plax-bg-img-1::before {
+  /* Must include background-image for new parallax */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Positioning */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/* Search bar */
+.form-control {
+  font-size: 1.25vw;
+  height: 3vw;
+  width: 15vw;
+}
+
+/* Shapes */
+.line-scuffed-light-grey {
+    display: block;
+    border: none;
+    height: 1px;
+    background: #dddddf;
+}
+
+.line-white {
+    display: block;
+    border: none;
+    height: 1px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#3d3d3f), to(#fff));
 }
 
 /* ----------------- MEDIA ---------------- */
-/* @media (max-width: 572px) {
+@media (max-width: 572px) {
   #gmn-logo {
     width: 15vw;
   }
-} */
+
+  #navsidebar {
+    display: none;
+  }
+}
 
 
 

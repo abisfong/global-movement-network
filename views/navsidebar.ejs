@@ -1,17 +1,14 @@
-<ul class="nav flex-col">
-  <li class="nav-item">
-    <a class="nav-link">About 1</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link">About 1</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link">About 1</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link">About 1</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link">About 1</a>
-  </li>
-</ul>
+<nav id="navsidebar" class="h-fill w-20" style="overflow-y:scroll;">
+  <div style="background-color: white;
+              position: sticky;
+              top: 0;
+              padding-top: 8.5vw;
+              z-index: 3;">
+    <%- include('searchbar') -%>
+    <!-- Searchbar bottom dividing line -->
+    <span class="line-scuffed-light-grey"style="margin: 2.4vw 0 0 -1vw;"></span>
+  </div>
+  <div style="padding-top: 1vw;">
+    <%- include(page) -%>
+  </div>
+</nav>

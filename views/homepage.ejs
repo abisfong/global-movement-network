@@ -1,49 +1,150 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <%- include('meta') -%>
     <title>Global Movement Network</title>
-    <%- include('links') -%>
+    <%- include('shared-links') -%>
+    <link rel="stylesheet" href="css/homepage.css">
     <%- include('head-script') -%>
   </head>
   <body>
     <!-- Container for parallax -->
     <div class="plax">
       <%- include('navbar') -%>
-      <!-- Back section for parallax: Welcome Imagery -->
-      <section id="welcome-imagery"
+      <!-- Back section for parallax -->
+      <section id="headline"
                class="back
                       p-2
                       plax-bg-img-1
-                      text-center
                       text-vanilla-grey">
-        <h1 id="gmn-title">
-          Global Movement Network
-        </h1>
-        <h6 id="gmn-slogan">
-            We are a network of teachers, artists,
-            chefs, healers &mdash; <i>anyone</i> who stands for
-            environmental & social justice.
-        </h6>
+        <div class="cntr">
+          <h1 id="gmn-title">
+            Global <br> Movement <br> Network
+          </h1>
+          <h6 id="gmn-slogan">
+              We are a network of teachers, artists, chefs, healers &mdash;
+              <i>anyone</i> who stands for environmental & social justice.
+          </h6>
+        </div>
       </section>
-      <!-- Front section for parallax: How it Wo -->
-      <section id="to-be-determined"
-               class="base bg-vanilla-grey pt-4 text-center"
-               style="font-size: 4vw;">
-        tbd
+      <!-- Front section for parallax -->
+      <section id="upcoming-events"
+               class="base bg-vanilla-grey text-scuffed-light-grey">
+        <!-- <h2 id="upcoming-events-title"class="text-black"style="font-size: 4vw;">Upcoming Events</h2> -->
+        <div id="upcoming-events-carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#upcoming-events-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#upcoming-events-carousel" data-slide-to="1" class=""></li>
+            <li data-target="#upcoming-events-carousel" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner" style="text-shadow: 2px 2px 8px #5d5d5f;">
+            <div class="carousel-item active">
+              <img class="first-slide" src="images/image-asset.jpeg" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption text-left text-vanilla-grey">
+                  <h1>Donation Yoga Class</h1>
+                  <h3>Tuesdays, 6:30pm in Seattle</h3>
+                  <p>Every Tuesday night at Ritual House Yoga in Seattle, Join
+                     Erika Ramberg for an all levels Jivamukti Yoga class. All
+                     proceeds will support Global Movement Network
+                  </p>
+                  <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="second-slide" src="images/yoga-background.png" alt="Second slide">
+              <div class="container">
+                <div class="carousel-caption text-left text-vanilla-grey">
+                  <h1>Donation Yoga Class </h1>
+                  <h3>Thursdays, 8pm in San Francisco</h3>
+                  <p>Restorative yoga is a receptive practice in which your body
+                     is passive throughout the experience, weightlessly supported
+                     by props as your muscles extend and relax into subtle
+                     postures (usually 3-5 poses). We will explore the energetic
+                     union of breath and long held passive asana. This class is
+                     open to yogis of all backgrounds, levels, sizes and ages. No
+                     yoga experience is necessary, just come with the willingness
+                     to be still and present with yourself. Hands-on assisting
+                     will facilitate a deeper.
+                  </p>
+                  <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p> -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="third-slide" src="images/what-matters-img.png" alt="Third slide">
+              <div class="container">
+                <div class="carousel-caption text-left text-vanilla-grey">
+                  <h1>Ferndale, MI: Soulful Yoga with Juliet</h1>
+                  <h3>Monday, January 6, 2020 <br> 9:45 AM  10:45 AM</h3>
+                  <p>Join Juliet the first Monday of every month for a slow and
+                    completely guided yoga practice. In this class we will hold
+                    postures for several breaths in order to feel not just the
+                    breadth, but also the depth of the asana.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <a class="carousel-control-prev" href="#upcoming-events-carousel" role="button" data-slide="prev">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#upcoming-events-carousel" role="button" data-slide="next">
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
       </section>
       <!--  -->
-      <section id="upcoming-events"
-               class="bg-vanilla-grey pt-4 text-center wh-fill">
-        <h2 id="upcoming-events-title"
-            class="text-scuffed-dark-grey"
-            style="font-size: 4vw;">
-          <hr style="width: 75vw;">
-          tbd
-        </h2>
+      <section id="newsletter"
+               class="bg-vanilla-grey wh-fill">
+        <!-- <h1 id="newsletter-title"
+            class="text-white"
+            style="text-shadow: 1px 1px 2px #5d5d5d;">
+          Subcribe to our Newsletter
+        </h1> -->
+        <!-- Form -->
+        <!-- <div id="newsletter-form" class="row">
+          <div class="col-4">
+            <label for="first-name"
+                   class="sr-only">
+              First Name
+            </label>
+            <input type="text"
+                   id="first-name"
+                   class="form-control top-radius"
+                   placeholder="First Name"
+                   required=""
+                   autofocus="">
+          </div>
+          <div class="col-4">
+            <label for="last-name"
+                   class="sr-only">
+              Last Name
+            </label>
+            <input type="text"
+                   id="last-name"
+                   class="form-control top-radius"
+                   placeholder="Last Name"
+                   required=""
+                   style="">
+          </div>
+          <div class="col-4">
+            <label for="email"
+                   class="sr-only">
+              Verify Password
+            </label>
+            <input type="text"
+                   id="email"
+                   class="form-control top-radius"
+                   placeholder="Last Name"
+                   required=""
+                   style="">
+          </div>
+        </div> -->
       </section>
+      <%- include('footer') -%>
     </div>
-    <%- include('footer') -%>
     <%- include('body-script') -%>
   </body>
 </html>

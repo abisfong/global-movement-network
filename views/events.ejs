@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include('meta') -%>
+    <title>Events • Global Network Movement</title>
+    <%- include('shared-links') -%>
+    <link rel="stylesheet" href="css/events.css">
+    <%- include('head-script') -%>
+  </head>
+  <body>
+    <%- include('navbar') -%>
+    <%- include('navsidebar') -%>
+    <section id="events" class="ml-20 h-wrap w-80 bg-vanilla-grey">
+      <% for(const event of events) { %>
+        <%- include('event-card', {event: event}) -%>
+      <% } %>
+    </section>
+    <div class="ml-20 w-80">
+      <%- include('footer') -%>
+    </div>
+    <%- include('body-script') -%>
+  </body>
+</html>

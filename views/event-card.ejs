@@ -1,0 +1,24 @@
+<div class="card event-card text-scuffed-light-grey">
+  <div class="d-flex event-date card-header">
+    <p class="date mr-auto text-black">
+      <%= event.month.substr(0, 3) + event.day; %>
+      <% if(event.year != (new Date().getFullYear())) event.year; %>
+    </p>
+    <p class="time text-black"><%= event.time; %></p>
+  </div>
+  <div class="card-body">
+    <p class="card-title text-black">
+      <div class="profile-pic">
+        <img class="" src="" alt="">
+      </div>
+      <%= event.title; %>
+    </p>
+    <p class="card-text">
+      <%= event.desc; %>
+    </p>
+  </div>
+  <div class="card-body">
+    <a href="" class="card-link link-scuffed-light-grey">Event Page</a>
+    <a href="" class="card-link link-scuffed-light-grey">Buy Ticket</a>
+  </div>
+</div>

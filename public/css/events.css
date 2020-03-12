@@ -1,0 +1,86 @@
+#events {
+  padding: 14.5% 5% 10% 5%
+}
+
+.card-body {
+  padding-top: 0;
+}
+
+.card-header {
+  padding: 0;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.card-link {
+  font-size: .75vw;
+}
+
+.card-text {
+  font-size: 1.25vw;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 2vw;
+  padding-top: 1.5vh;
+}
+
+.col-sm-6 {
+}
+
+.date {
+  font-size: 2vw;
+  padding-top: .5vh;
+  padding-left: 2%;
+  margin-bottom: 1vh;
+}
+
+.event-card {
+  margin-bottom: 4vh;
+}
+
+.event-date {
+}
+
+.profile-pic {
+  display: inline-block;
+  width: 2vw;
+  height: auto;
+  margin-top: -0.5%;
+  border-radius: 50%;
+  background-color: #5d5d5f;
+}
+
+.time {
+  font-size: 1.25vw;
+  padding-top: 1.4%;
+  padding-right: 2%;
+  margin-bottom: -1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EOF */

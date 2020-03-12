@@ -1,22 +1,25 @@
 <!-- Nav Bar -->
-<header id="navbar" class="row align-items-center">
+<header id="navbar" class="row">
   <!-- Brand Logo -->
-  <a href="/" class="col-7">
-    <img id="gmn-logo"
-         src="images/gmn-logo-no-bkgrnd.png"
-         alt="Global Movment Network Logo">
-  </a>
+  <div class="col-6 col-sm-7">
+    <a href="/" >
+      <img id="gmn-logo"
+           class="shrink"
+           src="images/gmn-logo-no-bkgrnd.png"
+           alt="Global Movment Network Logo">
+    </a>
+  </div>
 
   <!-- Nav Links -->
-  <div id="navbar-links" class="col-5 text-scuffed-dark-grey">
-    <a class="navbar-link">About</a>
-    <a class="navbar-link">Events</a>
-    <a class="navbar-link">Contact</a>
-    <a class="navbar-link">Login</a>
+  <div id="navbar-links" class="col-7 col-sm-5">
+    <a class="navbar-link <%=navbarLinkColor%>" href="/about">About</a>
+    <a class="navbar-link <%=navbarLinkColor%>" href="/events">Events</a>
+    <a class="navbar-link <%=navbarLinkColor%>" href="/contact">Contact</a>
+    <a class="navbar-link <%=navbarLinkColor%>" href="/login">Login</a>
     <button id="donate-button"
             type="button"
-            class="btn bg-mtn-shadow-blue text-center">
-      <a class="text-vanilla-grey">Donate</a>
+            class="btn shrink text-center">
+      <a class="">Donate</a>
     </button>
   </div>
 </header>
